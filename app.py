@@ -34,7 +34,7 @@ if not st.session_state.logged_in:
             st.session_state.logged_in = True
             st.success("Login successful!")
             st.session_state.emp_id = username
-            st.experimental_rerun()
+            st.rerun()
 
 # Page 2: Data Entry
 elif st.session_state.logged_in and not st.session_state.get("view_dashboard", False):
